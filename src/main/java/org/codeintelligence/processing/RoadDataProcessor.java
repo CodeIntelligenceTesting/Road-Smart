@@ -2,6 +2,7 @@ package org.codeintelligence.processing;
 
 import org.codeintelligence.models.Road;
 
+import java.text.DecimalFormat;
 import java.util.Random;
 
 public class RoadDataProcessor {
@@ -12,11 +13,11 @@ public class RoadDataProcessor {
         this.road = road;
     }
 
-    public Double computeLength(){
+    public String computeLength(){
         String name = road.getName();
         Random random = new Random();
 
-        return 100.0 + (1000.0)*random.nextDouble();
+        return String.format("%.1f", 100.0 + (1000.0)*random.nextDouble());
     }
 
     public Double computeSpeedLimit(){

@@ -100,6 +100,7 @@ public class RoadSmartCLI {
     }
 
     private void quitOption(){
+        db.close();
         System.out.println("Quitting...");
         System.exit(0);
     }

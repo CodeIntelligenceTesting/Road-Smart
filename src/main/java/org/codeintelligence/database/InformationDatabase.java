@@ -32,23 +32,22 @@ public class InformationDatabase {
         }
     }
 
-    public ResultSet insertRoadData(Road road) {
+    public void insertRoadData(Road road) {
 
         RoadDataProcessor processor = new RoadDataProcessor(road);
-        String length = processor.computeLength().toString();
+        String length = processor.computeLength();
         String speedLimit = processor.computeSpeedLimit().toString();
 
         try {
-            String query = String.format("INSERT INTO roads (name, country, length, speedLimit) VALUES (%s, %s, %s, %s)", road.getName(), road.getCountry(), length, speedLimit);
-            return conn.createStatement().executeQuery(query);
+            String query = String.format("INSERT INTO roads (name, country, length, speedLimit) VALUES ('%s', '%s', '%s', '%s')", road.getName(), road.getCountry(), length, speedLimit);
+            conn.createStatement().execute(query);
         } catch (SQLException e){
             e.printStackTrace();
-            return null;
         }
     }
 
     public ResultSet readAllData() {
-        String query = "SELECT * from roads";
+        String query = "SELECT * FROM roads";
         try {
             return conn.createStatement().executeQuery(query);
         } catch (SQLException e) {
@@ -59,8 +58,16 @@ public class InformationDatabase {
 
     public void deleteRoadData(String name) {
         try {
-            String query = String.format("DELETE FROM roads WHERE name = %s", name);
-            conn.createStatement().executeQuery(query);
+            String query = String.format("DELETE FROM roads WHERE name = '%s'", name);
+            conn.createStatement().execute(query);
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
+
+    public void close(){
+        try {
+            conn.close();
         } catch (SQLException e){
             e.printStackTrace();
         }
