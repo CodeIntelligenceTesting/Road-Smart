@@ -1,5 +1,9 @@
 package org.codeintelligence.models;
 
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+
 public class Road {
 
     private String name;
@@ -13,6 +17,22 @@ public class Road {
         this.country = country;
         this.length = 0.0;
         this.speedLimit = 0;
+    }
+
+    private void readObject(ObjectInputStream ois) throws IOException, ClassNotFoundException {
+        name = (String) ois.readObject();
+        country = (String) ois.readObject();
+    }
+
+    public static Road deserialize(ByteArrayInputStream stream) throws IOException {
+        ObjectInputStream ois = new ObjectInputStream(stream);
+        try {
+            // Casting the result of readObject() occurs after the deserialization process ends
+            // which make it possible to read any object and can lead to gadget chain attacks
+            return (Road) ois.readObject();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public Road(){
