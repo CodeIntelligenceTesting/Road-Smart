@@ -2,6 +2,7 @@ package org.codeintelligence.cli;
 
 import org.codeintelligence.database.InformationDatabase;
 import org.codeintelligence.models.Road;
+import org.codeintelligence.processing.DataOutput;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -10,6 +11,7 @@ import java.util.Scanner;
 public class RoadSmartCLI {
 
     InformationDatabase db;
+    DataOutput output;
 
     private Scanner scanner;
 
@@ -32,6 +34,11 @@ public class RoadSmartCLI {
     public RoadSmartCLI(InformationDatabase db){
         this.db = db;
         db.connect();
+        output = new DataOutput(db);
+    }
+
+    public RoadSmartCLI(){
+        this(new InformationDatabase());
     }
 
     public void runCLI(){
@@ -49,6 +56,8 @@ public class RoadSmartCLI {
     }
 
     private void processOption(String optionIn){
+        final String validOptions = "crdpq";
+
         switch (optionIn.toLowerCase()) {
             case "c": createOption(); break;
             case "r": readOption(); break;
@@ -72,15 +81,7 @@ public class RoadSmartCLI {
     private void readOption() {
         System.out.println("Read all roads");
 
-        try {
-            ResultSet resultSet = db.readAllData();
-            while (resultSet.next()) {
-                System.out.printf("%s %s%n", resultSet.getString(1), resultSet.getString(2));
-            }
-        } catch (SQLException e){
-            e.printStackTrace();
-        }
-
+        output.toConsole();
     }
 
     private void deleteOption() {
@@ -95,18 +96,10 @@ public class RoadSmartCLI {
     private void printOption(){
         System.out.print("Print roads to report ");
 
-        try {
-            ResultSet resultSet = db.readAllData();
-            while (resultSet.next()) {
-                System.out.printf("%s %s%n", resultSet.getString(1), resultSet.getString(2));
-            }
-        }catch (SQLException e){
-            e.printStackTrace();
-        }
+        output.toXML();
     }
 
     private void quitOption(){
-
         System.out.println("Quitting...");
         System.exit(0);
     }

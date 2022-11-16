@@ -1,4 +1,4 @@
-package org.codeintelligence;
+package org.codeintelligence.processing;
 
 public class RoadCalculator {
 
