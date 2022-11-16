@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50d8d03f-dcd0-47c3-bb9b-d8f15969166a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/codeintelligence/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/codeintelligence/cli/RoadSmartCLI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/codeintelligence/models/Road.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/codeintelligence/RoadCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/codeintelligence/database/InformationDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/codeintelligence/processing/RoadDataProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/unit/RoadCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/codeintelligence/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/codeintelligence/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/codeintelligence/cli/RoadSmartCLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/codeintelligence/cli/RoadSmartCLI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/codeintelligence/models/Road.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/codeintelligence/models/Road.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.codeintelligence.Main" />
       <module name="RoadSmart" />
@@ -60,9 +61,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RoadCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RoadSmart" />
+      <option name="PACKAGE_NAME" value="unit" />
+      <option name="MAIN_CLASS_NAME" value="unit.RoadCalculatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.RoadCalculatorTest" />
       </list>
     </recent_temporary>
   </component>

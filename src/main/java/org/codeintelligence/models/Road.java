@@ -5,6 +5,20 @@ public class Road {
     private String name;
     private String country;
 
+    private Double length;
+    private Integer speedLimit;
+
+    public Road(String name, String country){
+        this.name = name;
+        this.country = country;
+        this.length = 0.0;
+        this.speedLimit = 0;
+    }
+
+    public Road(){
+        this("", "");
+    }
+
     public String getName() {
         return name;
     }
@@ -21,11 +35,11 @@ public class Road {
         this.country = country;
     }
 
-    public Integer getLength() {
+    public Double getLength() {
         return length;
     }
 
-    public void setLength(Integer length) {
+    public void setLength(Double length) {
         this.length = length;
     }
 
@@ -35,19 +49,5 @@ public class Road {
 
     public void setSpeedLimit(Integer speedLimit) {
         this.speedLimit = speedLimit;
-    }
-
-    private Integer length;
-    private Integer speedLimit;
-
-    public Road(String name, String country){
-        this.name = name;
-        this.country = country;
-        this.length = 0;
-        this.speedLimit = 0;
-    }
-
-    public Road(){
-        this("", "");
     }
 }
