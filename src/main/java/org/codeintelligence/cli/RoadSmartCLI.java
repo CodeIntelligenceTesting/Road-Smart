@@ -56,7 +56,6 @@ public class RoadSmartCLI {
     }
 
     private void processOption(String optionIn){
-        final String validOptions = "crdpq";
 
         switch (optionIn.toLowerCase()) {
             case "c": createOption(); break;
@@ -64,6 +63,7 @@ public class RoadSmartCLI {
             case "d": deleteOption(); break;
             case "p": printOption(); break;
             case "q": quitOption(); break;
+            default: invalidOption(); break;
         }
     }
     private void createOption() {
@@ -94,7 +94,7 @@ public class RoadSmartCLI {
     }
 
     private void printOption(){
-        System.out.print("Print roads to report ");
+        System.out.println("Print roads to report");
 
         output.toXML();
     }
@@ -103,5 +103,9 @@ public class RoadSmartCLI {
         db.close();
         System.out.println("Quitting...");
         System.exit(0);
+    }
+
+    private void invalidOption(){
+        System.out.println("Invalid option, try again.");
     }
 }
