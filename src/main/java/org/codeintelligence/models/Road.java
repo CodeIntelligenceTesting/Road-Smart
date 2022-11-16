@@ -24,7 +24,7 @@ public class Road {
         country = (String) ois.readObject();
     }
 
-    public static Road deserialize(ByteArrayInputStream stream) throws IOException {
+    public Road deserialize(ByteArrayInputStream stream) throws IOException {
         ObjectInputStream ois = new ObjectInputStream(stream);
         try {
             // Casting the result of readObject() occurs after the deserialization process ends
