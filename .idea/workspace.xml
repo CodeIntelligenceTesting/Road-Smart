@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="50d8d03f-dcd0-47c3-bb9b-d8f15969166a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/codeintelligence/cli/RoadSmartCLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/codeintelligence/cli/RoadSmartCLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/codeintelligence/processing/DataOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/codeintelligence/processing/DataOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fuzz/RoadSerializerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fuzz/RoadSerializerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/unit/RoadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unit/RoadTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +40,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Shell Script.Run InformationDatabaseFuzzTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.codeintelligence.Main" />
       <module name="RoadSmart" />
@@ -58,6 +58,7 @@
       <module name="RoadSmart" />
       <option name="PACKAGE_NAME" value="unit" />
       <option name="MAIN_CLASS_NAME" value="unit.RoadCalculatorTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -78,11 +79,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Run InformationDatabaseFuzzTest" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="cifuzz run fuzz.InformationDatabaseFuzzTest" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test/java" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.RoadCalculatorTest" />
+      <item itemvalue="JUnit.RoadTest" />
+      <item itemvalue="Shell Script.Run InformationDatabaseFuzzTest" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.RoadCalculatorTest" />
         <item itemvalue="JUnit.RoadTest" />
+        <item itemvalue="JUnit.RoadCalculatorTest" />
       </list>
     </recent_temporary>
   </component>

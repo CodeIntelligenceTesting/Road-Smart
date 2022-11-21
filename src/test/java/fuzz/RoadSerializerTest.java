@@ -4,7 +4,6 @@ import com.code_intelligence.jazzer.api.FuzzedDataProvider;
 import com.code_intelligence.jazzer.junit.FuzzTest;
 import org.codeintelligence.models.Road;
 
-import javax.imageio.IIOException;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 

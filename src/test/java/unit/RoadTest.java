@@ -1,7 +1,5 @@
 package unit;
 
-import com.code_intelligence.jazzer.api.FuzzedDataProvider;
-import com.code_intelligence.jazzer.junit.FuzzTest;
 import org.codeintelligence.models.Road;
 import org.junit.Assert;
 import org.junit.Before;
