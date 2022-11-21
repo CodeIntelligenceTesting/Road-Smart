@@ -1,5 +1,3 @@
-package unit;
-
 import org.codeintelligence.models.Road;
 import org.junit.Assert;
 import org.junit.Before;

@@ -1,5 +1,3 @@
-package unit;
-
 import org.codeintelligence.processing.RoadCalculator;
 import org.junit.Assert;
 import org.junit.Test;
