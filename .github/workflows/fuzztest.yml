@@ -30,7 +30,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn clean instll
+      run: mvn clean install
     - name: Install cifuzz
       run: sh -c "$(curl -fsSL https://raw.githubusercontent.com/CodeIntelligenceTesting/cifuzz/main/install.sh)"
     - name: Run Fuzz Test with cifuzz
