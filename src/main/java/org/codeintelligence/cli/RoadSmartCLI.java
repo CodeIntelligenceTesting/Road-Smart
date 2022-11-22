@@ -15,19 +15,14 @@ public class RoadSmartCLI {
 
     private Scanner scanner;
 
-    private final String greeting = """
-    Welcome to Road Smart, the intelligent tool for getting road information!        
-    """;
+    private final String greeting = "Welcome to Road Smart, the intelligent tool for getting road information!\n";
 
-    private final String optionsPrompt = """
-        Please select from the following options:
-    
-        [C]reate new road entry
-        [R]ead all road entries
-        [D]elete road entry
-        [P]rint road entries reports
-        [Q]uit this application
-    """;
+    private final String optionsPrompt = "Please select from the following options:\n" +
+        "[C]reate new road entry\n" +
+        "[R]ead all road entries\n" +
+        "[D]elete road entry\n" +
+        "[P]rint road entries reports\n" +
+        "[Q]uit this application\n\n";
 
     private final String promptString = ">> ";
 
