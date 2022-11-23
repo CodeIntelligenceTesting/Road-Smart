@@ -62,3 +62,9 @@ cifuzz run InformationDatabaseFuzzTest
 ```
 
 to execute the fuzz test `InformationDatabaseFuzzTest`.
+
+## Pull Requests
+
+Pull requests welcome!
+
+Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before submitting your pull requests.
