@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50d8d03f-dcd0-47c3-bb9b-d8f15969166a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/codeintelligence/processing/RoadDataProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/codeintelligence/processing/RoadDataProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,14 +33,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/joshgrant/Documents/java_stuff/RoadSmart/.github/workflows&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/joshgrant/Documents/java_stuff/RoadSmart/.github/workflows",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.kotlinCompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/.github/workflows" />
@@ -47,7 +53,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.AnalyzerFuzzTest.fuzzComplexProcessing">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.codeintelligence.Main" />
       <module name="RoadSmart" />
@@ -57,6 +63,26 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnalyzerFuzzTest.checkSizes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RoadSmart" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AnalyzerFuzzTest" />
+      <option name="METHOD_NAME" value="checkSizes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnalyzerFuzzTest.fuzzComplexProcessing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RoadSmart" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AnalyzerFuzzTest" />
+      <option name="METHOD_NAME" value="fuzzComplexProcessing(com.code_intelligence.jazzer.api.FuzzedDataProvider)" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,12 +129,16 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.AnalyzerFuzzTest.checkSizes" />
+      <item itemvalue="JUnit.AnalyzerFuzzTest.fuzzComplexProcessing" />
       <item itemvalue="JUnit.RoadCalculatorTest" />
       <item itemvalue="JUnit.RoadTest" />
       <item itemvalue="Shell Script.Run InformationDatabaseFuzzTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AnalyzerFuzzTest.fuzzComplexProcessing" />
+        <item itemvalue="JUnit.AnalyzerFuzzTest.checkSizes" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.RoadTest" />
         <item itemvalue="JUnit.RoadCalculatorTest" />

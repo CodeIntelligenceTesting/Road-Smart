@@ -23,7 +23,7 @@ public class RoadDataProcessor {
     public Double computeSpeedLimit(){
         String country = road.getCountry();
 
-        if (country.isBlank()){
+        if (country.equals("")){
             System.out.println("ERROR: Invalid country");
             return 0.0;
         }
