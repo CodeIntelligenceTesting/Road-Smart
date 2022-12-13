@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.codeintelligence.processing.RoadDataProcessor;
 import org.h2.jdbcx.JdbcDataSource;
 import org.codeintelligence.models.Road;
@@ -12,6 +14,8 @@ public class InformationDatabase {
 
     private Connection conn;
     private final String initialize = "CREATE TABLE IF NOT EXISTS roads (id IDENTITY PRIMARY KEY, name VARCHAR(50), country VARCHAR(50), length VARCHAR(10), speedLimit VARCHAR(10))";
+
+    private Logger log = LogManager.getLogger(InformationDatabase.class);
 
     public void connect()  {
         JdbcDataSource ds = new JdbcDataSource();
@@ -32,17 +36,20 @@ public class InformationDatabase {
         }
     }
 
-    public void insertRoadData(Road road) {
+    public Boolean insertRoadData(Road road) {
 
         RoadDataProcessor processor = new RoadDataProcessor(road);
         String length = processor.computeLength();
         String speedLimit = processor.computeSpeedLimit().toString();
 
         try {
+            log.info(String.format("Inserting Road '%s' into database", road.getName()));
             String query = String.format("INSERT INTO roads (name, country, length, speedLimit) VALUES ('%s', '%s', '%s', '%s')", road.getName(), road.getCountry(), length, speedLimit);
-            conn.createStatement().execute(query);
+            return conn.createStatement().execute(query);
         } catch (SQLException e){
+            log.error(String.format("Error in inputting '%s' into database", road.getName()));
             e.printStackTrace();
+            return false;
         }
     }
 

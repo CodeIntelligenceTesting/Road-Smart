@@ -3,7 +3,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class RoadTest {
+public class RoadTest { // abstract details into super class, such as
 
     private Road initializedRoad;
     private Road emptyRoad;

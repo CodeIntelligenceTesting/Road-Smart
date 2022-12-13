@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50d8d03f-dcd0-47c3-bb9b-d8f15969166a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/codeintelligence/processing/RoadDataProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/codeintelligence/processing/RoadDataProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/codeintelligence/database/InformationDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/codeintelligence/database/InformationDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/codeintelligence/models/Road.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/codeintelligence/models/Road.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AnalyzerFuzzTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AnalyzerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/InformationDatabaseFuzzTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InformationDatabaseFuzzTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RoadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RoadTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,18 +36,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/joshgrant/Documents/java_stuff/RoadSmart/.github/workflows",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.kotlinCompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/joshgrant/Documents/java_stuff/RoadSmart/.github/workflows&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.kotlinCompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/.github/workflows" />
@@ -53,7 +56,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AnalyzerFuzzTest.fuzzComplexProcessing">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.codeintelligence.Main" />
       <module name="RoadSmart" />
@@ -67,32 +70,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnalyzerFuzzTest.checkSizes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AnalyzerTest.checkSizes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RoadSmart" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AnalyzerFuzzTest" />
+      <option name="MAIN_CLASS_NAME" value="AnalyzerTest" />
       <option name="METHOD_NAME" value="checkSizes" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnalyzerFuzzTest.fuzzComplexProcessing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AnalyzerTest.fuzzComplexProcessing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RoadSmart" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AnalyzerFuzzTest" />
+      <option name="MAIN_CLASS_NAME" value="AnalyzerTest" />
       <option name="METHOD_NAME" value="fuzzComplexProcessing(com.code_intelligence.jazzer.api.FuzzedDataProvider)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoadCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InformationDatabaseFuzzTest.insertDataUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RoadSmart" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RoadCalculatorTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="InformationDatabaseFuzzTest" />
+      <option name="METHOD_NAME" value="insertDataUnitTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -113,7 +116,7 @@
       </method>
     </configuration>
     <configuration name="Run InformationDatabaseFuzzTest" type="ShConfigurationType">
-      <option name="SCRIPT_TEXT" value="cifuzz run fuzz.InformationDatabaseFuzzTest" />
+      <option name="SCRIPT_TEXT" value="cifuzz run InformationDatabaseFuzzTest" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
       <option name="SCRIPT_PATH" value="" />
       <option name="SCRIPT_OPTIONS" value="" />
@@ -129,19 +132,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.AnalyzerFuzzTest.checkSizes" />
-      <item itemvalue="JUnit.AnalyzerFuzzTest.fuzzComplexProcessing" />
-      <item itemvalue="JUnit.RoadCalculatorTest" />
+      <item itemvalue="JUnit.AnalyzerTest.checkSizes" />
+      <item itemvalue="JUnit.AnalyzerTest.fuzzComplexProcessing" />
+      <item itemvalue="JUnit.InformationDatabaseFuzzTest.insertDataUnitTest" />
       <item itemvalue="JUnit.RoadTest" />
       <item itemvalue="Shell Script.Run InformationDatabaseFuzzTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AnalyzerFuzzTest.fuzzComplexProcessing" />
-        <item itemvalue="JUnit.AnalyzerFuzzTest.checkSizes" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.InformationDatabaseFuzzTest.insertDataUnitTest" />
+        <item itemvalue="JUnit.AnalyzerTest.fuzzComplexProcessing" />
+        <item itemvalue="JUnit.AnalyzerTest.checkSizes" />
         <item itemvalue="JUnit.RoadTest" />
-        <item itemvalue="JUnit.RoadCalculatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -166,5 +169,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/InformationDatabaseFuzzTest.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

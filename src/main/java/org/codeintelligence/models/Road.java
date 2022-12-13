@@ -12,11 +12,15 @@ public class Road {
     private Double length;
     private Integer speedLimit;
 
-    public Road(String name, String country){
+    public Road(String name, String country){  // try a constructor
         this.name = name;
         this.country = country;
         this.length = 0.0;
         this.speedLimit = 0;
+    }
+
+    public Road(String country){
+        this("Main Street", country);
     }
 
     private void readObject(ObjectInputStream ois) throws IOException, ClassNotFoundException {
