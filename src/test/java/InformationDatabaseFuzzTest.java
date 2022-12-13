@@ -9,7 +9,6 @@ import org.junit.Test;
 public class InformationDatabaseFuzzTest {
 
     private InformationDatabase db;
-    private Road testRoad;
 
     private InformationDatabase initializeDatabase(){
         InformationDatabase db = new InformationDatabase();
@@ -21,25 +20,19 @@ public class InformationDatabaseFuzzTest {
         return data.consumeString(10);
     }
 
-    @Test
+    @Test // a unit test to verify the functionality of inserting data
     public void insertDataUnitTest(){ 
-        // a unit test to verify the functionality of inserting data
         db = initializeDatabase();
-        testRoad = new Road("Germany");
-
-        Boolean result = db.insertRoadData(testRoad);
-
-        Assert.assertTrue(result);
+        Road testRoad = new Road("Germany"); // use static data for object creation
+        Boolean result = db.insertRoadData(testRoad); // Execute vulnerable function without errors
+        Assert.assertTrue(result); // assert that the provided test case returns true
     }
 
-    @FuzzTest
+    @FuzzTest // the fuzzer generates inputs in data based on a unit's run-time behaviour
     public void insertDataFuzzTest(FuzzedDataProvider data) {
-        // here we use the FuzzedDataProvider to generate fuzzed values for testing
-        db = initializeDatabase();
-        String testInput = fuzzedString(data);
-
-        db.insertRoadData(new Road(testInput)); // here is a SQL injection in the source
-        
-        Assert.assertNotNull(db);
+        db = initializeDatabase(); 
+        Road testRoad = new Road(data.consumeRemainingAsString()); // use generated data for object creation
+        db.insertRoadData(testInput)); // Execute vulnerable function and detect an SQL injection + RCE
+        Assert.assertNotNull(db); // fuzz testing will find inputs violating this assertion
     }
 }
