@@ -22,7 +22,8 @@ public class InformationDatabaseFuzzTest {
     }
 
     @Test
-    public void insertDataUnitTest(){ // a unit test to verify the functionality of inserting data
+    public void insertDataUnitTest(){ 
+        // a unit test to verify the functionality of inserting data
         db = initializeDatabase();
         testRoad = new Road("Germany");
 
@@ -32,12 +33,13 @@ public class InformationDatabaseFuzzTest {
     }
 
     @FuzzTest
-    void insertDataFuzzTest(FuzzedDataProvider data) { // here we use the FuzzedDataProvider to generate fuzzed values for testing
+    public void insertDataFuzzTest(FuzzedDataProvider data) {
+        // here we use the FuzzedDataProvider to generate fuzzed values for testing
         db = initializeDatabase();
         String testInput = fuzzedString(data);
 
-        db.insertRoadData(new Road(testInput)); // here a SQL injection, other things may happen
-
+        db.insertRoadData(new Road(testInput)); // here is a SQL injection in the source
+        
         Assert.assertNotNull(db);
     }
 }

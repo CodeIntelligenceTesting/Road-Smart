@@ -45,7 +45,7 @@ public class InformationDatabase {
         try {
             log.info(String.format("Inserting Road '%s' into database", road.getName()));
             String query = String.format("INSERT INTO roads (name, country, length, speedLimit) VALUES ('%s', '%s', '%s', '%s')", road.getName(), road.getCountry(), length, speedLimit);
-            return conn.createStatement().execute(query);
+            return !conn.createStatement().execute(query);
         } catch (SQLException e){
             log.error(String.format("Error in inputting '%s' into database", road.getName()));
             e.printStackTrace();
