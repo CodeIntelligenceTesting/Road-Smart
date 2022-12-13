@@ -24,7 +24,7 @@ public class InformationDatabaseFuzzTest {
     public void insertDataUnitTest(){ 
         db = initializeDatabase();
         Road testRoad = new Road("Germany"); // use static data for object creation
-        Boolean result = db.insertRoadData(testRoad); // Execute vulnerable function without errors
+        Boolean result = db.insertRoadData(testRoad); // execute vulnerable function without errors
         Assert.assertTrue(result); // assert that the provided test case returns true
     }
 
@@ -32,7 +32,7 @@ public class InformationDatabaseFuzzTest {
     public void insertDataFuzzTest(FuzzedDataProvider data) {
         db = initializeDatabase(); 
         Road testRoad = new Road(data.consumeRemainingAsString()); // use generated data for object creation
-        db.insertRoadData(testInput)); // Execute vulnerable function and detect an SQL injection + RCE
-        Assert.assertNotNull(db); // fuzz testing will find inputs violating this assertion
+        Boolean result = db.insertRoadData(testRoad); // execute vulnerable function and detect an SQL injection + RCE
+        Assert.assertTrue(result); // fuzz testing will find inputs violating this assertion
     }
 }
