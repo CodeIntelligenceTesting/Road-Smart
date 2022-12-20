@@ -2,7 +2,6 @@ package org.codeintelligence.processing;
 
 import org.codeintelligence.models.Road;
 
-import java.text.DecimalFormat;
 import java.util.Random;
 
 public class RoadDataProcessor {

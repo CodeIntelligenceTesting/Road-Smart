@@ -4,8 +4,6 @@ import org.codeintelligence.database.InformationDatabase;
 import org.codeintelligence.models.Road;
 import org.codeintelligence.processing.DataOutput;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.Scanner;
 
 public class RoadSmartCLI {

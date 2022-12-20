@@ -1,14 +1,14 @@
 package org.codeintelligence.database;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.codeintelligence.models.Road;
+import org.codeintelligence.processing.RoadDataProcessor;
+import org.h2.jdbcx.JdbcDataSource;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.codeintelligence.processing.RoadDataProcessor;
-import org.h2.jdbcx.JdbcDataSource;
-import org.codeintelligence.models.Road;
 
 public class InformationDatabase {
 

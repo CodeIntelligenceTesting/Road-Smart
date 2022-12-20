@@ -3,7 +3,6 @@ import com.code_intelligence.jazzer.junit.FuzzTest;
 import org.codeintelligence.database.InformationDatabase;
 import org.codeintelligence.models.Road;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 public class InformationDatabaseFuzzTest {
