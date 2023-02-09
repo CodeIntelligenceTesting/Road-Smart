@@ -15,10 +15,6 @@ public class InformationDatabaseFuzzTest {
         return db;
     }
 
-    private String fuzzedString(FuzzedDataProvider data){
-        return data.consumeString(10);
-    }
-
     @Test // a unit test to verify the functionality of inserting data
     public void insertDataUnitTest(){ 
         db = initializeDatabase();
