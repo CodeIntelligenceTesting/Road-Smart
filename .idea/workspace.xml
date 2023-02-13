@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50d8d03f-dcd0-47c3-bb9b-d8f15969166a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/InformationDatabaseFuzzTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InformationDatabaseFuzzTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +52,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.InformationDatabaseFuzzTest.insertDataFuzzTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.codeintelligence.Main" />
       <module name="RoadSmart" />
@@ -85,27 +86,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InformationDatabaseFuzzTest.insertDataFuzzTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RoadSmart" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InformationDatabaseFuzzTest" />
+      <option name="METHOD_NAME" value="insertDataFuzzTest(com.code_intelligence.jazzer.api.FuzzedDataProvider)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InformationDatabaseFuzzTest.insertDataUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RoadSmart" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="InformationDatabaseFuzzTest" />
       <option name="METHOD_NAME" value="insertDataUnitTest" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RoadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RoadSmart" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RoadTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,19 +123,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.InformationDatabaseFuzzTest.insertDataFuzzTest" />
       <item itemvalue="JUnit.AnalyzerTest.checkSizes" />
       <item itemvalue="JUnit.AnalyzerTest.fuzzComplexProcessing" />
       <item itemvalue="JUnit.InformationDatabaseFuzzTest.insertDataUnitTest" />
-      <item itemvalue="JUnit.RoadTest" />
       <item itemvalue="Shell Script.Run InformationDatabaseFuzzTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.InformationDatabaseFuzzTest.insertDataFuzzTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.InformationDatabaseFuzzTest.insertDataUnitTest" />
         <item itemvalue="JUnit.AnalyzerTest.fuzzComplexProcessing" />
         <item itemvalue="JUnit.AnalyzerTest.checkSizes" />
-        <item itemvalue="JUnit.RoadTest" />
       </list>
     </recent_temporary>
   </component>

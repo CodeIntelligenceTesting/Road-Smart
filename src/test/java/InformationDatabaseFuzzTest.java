@@ -18,7 +18,7 @@ public class InformationDatabaseFuzzTest {
     @Test // a unit test to verify the functionality of inserting data
     public void insertDataUnitTest(){ 
         db = initializeDatabase();
-        Road testRoad = new Road("Germany"); // use static data for object creation
+        Road testRoad = new Road("Canada"); // use static data for object creation
         Boolean result = db.insertRoadData(testRoad); // execute vulnerable function without errors
         Assert.assertTrue(result); // assert that the provided test case returns true
     }

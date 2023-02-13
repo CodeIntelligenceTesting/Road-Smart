@@ -1,0 +1,39 @@
+{
+  "name": "brilliant_escargot",
+  "type": "CRASH",
+  "input_data": "ClgmJw==",
+  "logs": [
+    "== Java Exception: com.code_intelligence.jazzer.api.FuzzerSecurityIssueHigh: SQL Injection",
+    "Injected query: INSERT INTO roads (name, country, length, speedLimit) VALUES ('Main Street', '",
+    "X\u0026'', '507.1', '125.0')",
+    "",
+    "\tat com.code_intelligence.jazzer.sanitizers.SqlInjection.checkSqlExecute(SqlInjection.java:100)",
+    "\tat org.codeintelligence.database.InformationDatabase.insertRoadData(InformationDatabase.java:48)",
+    "\tat InformationDatabaseFuzzTest.insertDataFuzzTest(InformationDatabaseFuzzTest.java:30)",
+    "== libFuzzer crashing input ==",
+    "MS: 0 ; base unit: 0000000000000000000000000000000000000000",
+    "0xa,0x58,0x26,0x27,",
+    "\\012X\u0026'",
+    "artifact_prefix='./'; Test unit written to .cifuzz-findings/brilliant_escargot/crashing-input",
+    "Base64: ClgmJw=="
+  ],
+  "details": "Security Issue: SQL Injection",
+  "more_details": {
+    "name": "SQL Injection",
+    "severity": {
+      "description": "HIGH",
+      "score": 7
+    }
+  },
+  "created_at": "2023-02-09T18:21:25.838583-05:00",
+  "input_file": ".cifuzz-findings/brilliant_escargot/crashing-input",
+  "stack_trace": [
+    {
+      "SourceFile": "com.code_intelligence.jazzer.sanitizers.SqlInjection",
+      "Line": 100,
+      "Column": 0,
+      "FrameNumber": 0,
+      "Function": "checkSqlExecute"
+    }
+  ]
+}
