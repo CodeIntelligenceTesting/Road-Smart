@@ -1,0 +1,19 @@
+{
+  "name": "wild_blowfish",
+  "type": "CRASH",
+  "input_data": "//////8K",
+  "logs": [
+    "==69812== ERROR: libFuzzer: out-of-memory (used: 3146Mb; limit: 3000Mb)",
+    "   To change the out-of-memory limit use -rss_limit_mb=\u003cN\u003e",
+    "",
+    "MS: 1 InsertRepeatedBytes-; base unit: adc83b19e793491b1c6ea0fd8b46cd9f32e592fc",
+    "0xff,0xff,0xff,0xff,0xff,0xa,",
+    "\\377\\377\\377\\377\\377\\012",
+    "artifact_prefix='./'; Test unit written to ../../../.cifuzz-findings/wild_blowfish/crashing-input",
+    "Base64: //////8K",
+    "SUMMARY: libFuzzer: out-of-memory"
+  ],
+  "details": "out-of-memory (used: 3146Mb; limit: 3000Mb)",
+  "created_at": "2023-02-13T13:24:21.181328-05:00",
+  "input_file": ".cifuzz-findings/wild_blowfish/crashing-input"
+}
