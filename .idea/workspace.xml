@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="50d8d03f-dcd0-47c3-bb9b-d8f15969166a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/InformationDatabaseFuzzTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InformationDatabaseFuzzTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InformationDatabaseFuzzTest.insertDataFuzzTest">
+  <component name="RunManager" selected="Shell Script.Run SpeedAnalyzer Fuzz Test">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.codeintelligence.Main" />
       <module name="RoadSmart" />
@@ -62,26 +61,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AnalyzerTest.checkSizes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RoadSmart" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AnalyzerTest" />
-      <option name="METHOD_NAME" value="checkSizes" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AnalyzerTest.fuzzComplexProcessing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RoadSmart" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AnalyzerTest" />
-      <option name="METHOD_NAME" value="fuzzComplexProcessing(com.code_intelligence.jazzer.api.FuzzedDataProvider)" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,6 +85,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpeedAnalyzerTest.checkSizes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RoadSmart" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SpeedAnalyzerTest" />
+      <option name="METHOD_NAME" value="checkSizes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Run InformationDatabaseFuzzTest" type="ShConfigurationType">
       <option name="SCRIPT_TEXT" value="cifuzz run InformationDatabaseFuzzTest" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
@@ -121,21 +110,35 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="Run SpeedAnalyzer Fuzz Test" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="cifuzz run SpeedAnalyzerTest" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test/java" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.SpeedAnalyzerTest.checkSizes" />
       <item itemvalue="JUnit.InformationDatabaseFuzzTest.insertDataFuzzTest" />
-      <item itemvalue="JUnit.AnalyzerTest.checkSizes" />
-      <item itemvalue="JUnit.AnalyzerTest.fuzzComplexProcessing" />
       <item itemvalue="JUnit.InformationDatabaseFuzzTest.insertDataUnitTest" />
       <item itemvalue="Shell Script.Run InformationDatabaseFuzzTest" />
+      <item itemvalue="Shell Script.Run SpeedAnalyzer Fuzz Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpeedAnalyzerTest.checkSizes" />
         <item itemvalue="JUnit.InformationDatabaseFuzzTest.insertDataFuzzTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.InformationDatabaseFuzzTest.insertDataUnitTest" />
-        <item itemvalue="JUnit.AnalyzerTest.fuzzComplexProcessing" />
-        <item itemvalue="JUnit.AnalyzerTest.checkSizes" />
       </list>
     </recent_temporary>
   </component>
