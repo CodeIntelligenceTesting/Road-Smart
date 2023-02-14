@@ -1,5 +1,9 @@
 # RoadSmart - An Example Java Application for Testing
 
+[![Fuzz testing with CI Fuzz and JUnit]
+(https://img.youtube.com/vi/dHrIk6rdm7I/maxresdefault.jpg)]
+(https://www.youtube.com/watch?v=dHrIk6rdm7I)
+
 ## Introduction
 
 RoadSmart is a command-line application used to provide information for major roads all over the world. While it could be helpful, it is also extremely buggy for a CLI app.
